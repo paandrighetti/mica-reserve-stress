@@ -82,6 +82,9 @@ def build(out: Path) -> str:
         "",
         "## 2. Rules and their status",
         "",
+        ("EBA/RTS/2024/10 and EBA/RTS/2024/11 are the EBA's final drafts of regulatory technical standards (RTS) "
+         "of 13 June 2024, which the Commission had not adopted on 20 October 2026."),
+        "",
         table(pd.DataFrame({"Rule": rules.rule, "Threshold": [f"{'at least' if o == '>=' else 'at most'} {pct(t, 0)}"
                                                                for o, t in zip(rules.op, rules.threshold)],
                             "Applies to": rules.applies_to, "Status": rules.status, "Source": rules.source})),
