@@ -86,7 +86,8 @@ def test_flows_data_changes_and_worst():
     assert flows.data_changes(frame(spike)) == {pd.Timestamp("2024-05-30"), pd.Timestamp("2024-05-31")}
     assert flows.data_changes(frame(run)) == set()
     w1, day = flows.worst(frame(run), 1)
-    assert w1 == pytest.approx(0.05) and day == pd.Timestamp("2024-06-09")
+    # 9 June follows a day without change, so its move may span several days and is left out
+    assert w1 == pytest.approx(0.05) and day == pd.Timestamp("2024-06-10")
     w7, _ = flows.worst(frame(run), 7)
     assert w7 == pytest.approx(1 - 0.95 ** 5)
     assert np.isnan(flows.worst(frame(spike), 1)[0]) or flows.worst(frame(spike), 1)[0] == 0
@@ -107,8 +108,10 @@ def test_pages():
 
 def test_rules_apply():
     by_name = {r.rule: r for r in rules.RULES}
-    art54 = by_name["Deposits at credit institutions, all e-money tokens"]
-    assert rules.applicable(art54, True) and rules.applicable(art54, False)
+    art54 = by_name["Deposits at credit institutions"]
+    assert rules.applicable(art54, False) and not rules.applicable(art54, True)  # replaced for significant tokens
     sig = by_name["Deposits per currency, significant token"]
     assert rules.applicable(sig, True) and not rules.applicable(sig, False)
+    other = by_name["Deposits per currency, other tokens"]
+    assert rules.applicable(other, False) and not rules.applicable(other, True)
     assert art54.passes(0.3) and not art54.passes(0.29)

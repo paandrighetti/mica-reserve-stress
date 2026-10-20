@@ -84,12 +84,20 @@ def informative(s: pd.Series) -> tuple[bool, float]:
     return share >= MIN_SHARE_DAYS_CHANGED, share
 
 
+def single_day(s: pd.Series, o: pd.Series) -> pd.Series:
+    """One-day outflows whose series also moved the day before: after a day without any change, the move may be
+    the sum of several days' flows (a series updated irregularly), so it is left out."""
+    return o.where(s.diff().shift(1) != 0)
+
+
 def worst(df: pd.DataFrame, h: int) -> tuple[float, pd.Timestamp | None]:
     """Largest net outflow over h days in the token's own history, data changes left out."""
-    o = outflows(own_history(df.circulating), h, data_changes(df)).dropna()
+    o = outflows(own_history(df.circulating), h, data_changes(df))
+    o = (single_day(df.circulating, o) if h == 1 else o).dropna()
     return (float(o.max()), o.idxmax()) if len(o) else (float("nan"), None)
 
 
 def episode(df: pd.DataFrame, first: str, last: str, h: int) -> tuple[float, pd.Timestamp | None]:
-    o = outflows(df.circulating.where(df.circulating >= MIN_UNITS), h, data_changes(df)).loc[first:last].dropna()
+    o = outflows(df.circulating.where(df.circulating >= MIN_UNITS), h, data_changes(df))
+    o = (single_day(df.circulating, o) if h == 1 else o).loc[first:last].dropna()
     return (float(o.max()), o.idxmax()) if len(o) else (float("nan"), None)

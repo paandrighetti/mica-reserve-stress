@@ -15,7 +15,10 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from mrs import buckets, circle, flows, pages, rules
 
-SIGNIFICANT = {"USDC"}  # EBA decision of 14 October 2026, supervision from 12 November 2026
+# USDC: classified significant by the EBA on 14 October 2026, EBA supervision from 12 November 2026. Its
+# snapshot is tested against both regimes.
+REGIMES = {"USDC": (("not significant, until 11 November 2026", False), ("significant, from 12 November 2026", True))}
+NOT_SIGNIFICANT = (("not significant", False),)
 CURRENCY = {"USDC": "USD", "EURC": "EUR", "EURCV": "EUR", "USDCV": "USD", "EURQ": "EUR", "USDQ": "USD"}
 SERIES = {"USDC": 2, "EURC": 50, "EURCV": 254, "USDCV": 307, "EURQ": 274, "USDQ": 275, "USDT": 1, "BUSD": 4,
           "TUSD": 7}
@@ -57,21 +60,29 @@ def compliance(snap: pd.DataFrame) -> pd.DataFrame:
     latest = snap.sort_values("report_date").groupby("token").tail(1)
     out = []
     for _, s in latest.iterrows():
-        significant = s.token in SIGNIFICANT
-        for r in rules.RULES:
-            if not rules.applicable(r, significant):
-                continue
-            readings = ("look_through", "strict") if r.metric in ("daily_share", "weekly_share") else ("",)
-            for reading in readings:
-                metric = f"{r.metric}_{reading}" if reading else r.metric
-                if r.metric == "sovereign_share" and s.token in ("USDC",):
-                    reading, metric = "look_through", "sovereign_share"
-                value = s[metric]
-                out.append({"token": s.token, "report_date": s.report_date, "scope": SCOPE.get(s.token, "issuer's reserve"),
-                            "rule": r.rule, "reading": reading,
-                            "value": value, "op": r.op, "threshold": r.threshold, "status": r.status,
-                            "applies_to": r.applies_to, "source": r.source,
-                            "result": "not disclosed" if pd.isna(value) else ("meets" if r.passes(value) else "misses")})
+        for regime, significant in REGIMES.get(s.token, NOT_SIGNIFICANT):
+            for r in rules.RULES:
+                if not rules.applicable(r, significant):
+                    continue
+                fund = s.fund_share > 0
+                readings = ("look_through", "strict") if fund and r.metric in ("daily_share", "weekly_share") else ("",)
+                for reading in readings:
+                    metric = None if r.metric is None else (
+                        f"{r.metric}_{reading or 'look_through'}" if r.metric in ("daily_share", "weekly_share") else r.metric)
+                    value = float("nan") if metric is None else s[metric]
+                    note = ""
+                    if r.metric == "fund_share" and fund:
+                        note = "applied as if the fund's units were eligible, the reading most favourable to the issuer"
+                    if r.metric == "sovereign_share" and fund:
+                        note = "Treasury bills held through the fund included"
+                    if r.metric == "largest_bank_share":
+                        note = "tested at 25%, the cap for a systemically important bank; 15% or 5% apply otherwise"
+                    result = ("not testable from the disclosures" if metric is None else
+                              "not disclosed" if pd.isna(value) else "meets" if r.passes(value) else "misses")
+                    out.append({"token": s.token, "report_date": s.report_date, "regime": regime,
+                                "scope": SCOPE.get(s.token, "issuer's reserve"), "rule": r.rule, "reading": reading,
+                                "value": value, "op": r.op, "threshold": r.threshold, "status": r.status,
+                                "applies_to": r.applies_to, "source": r.source, "result": result, "note": note})
     return pd.DataFrame(out)
 
 
@@ -119,7 +130,7 @@ def stress(snap: pd.DataFrame, stats: pd.DataFrame, episodes: pd.DataFrame) -> p
     """Coverage of stressed outflows by the one-day and five-day buckets, latest snapshot of each token."""
     latest = snap.sort_values("report_date").groupby("token").tail(1).set_index("token")
     st = stats.set_index("token")
-    ep = episodes.groupby("horizon_days").outflow.max()
+    ep = episodes.groupby("horizon_days").outflow.max()  # episodes.csv leaves out one-day moves that span days
     out = []
     for token, s in latest.iterrows():
         for h, bucket in ((1, "daily"), (7, "weekly")):

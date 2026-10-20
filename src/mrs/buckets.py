@@ -1,8 +1,9 @@
 """Liquidity buckets of a reserve snapshot (draft RTS EBA/RTS/2024/10, article 1), under two readings of fund units.
 
 - look-through: assets held in the Circle Reserve Fund are classified by their own maturity;
-- strict: units of a US government money market fund are not eligible reserve assets under the EBA's draft
-  RTS on highly liquid financial instruments, so they count in no bucket.
+- strict: on our reading of the EBA's draft RTS on highly liquid financial instruments, units of a US government
+  money market fund are not eligible reserve assets (neither level 1 assets nor units of a UCITS), so they count
+  in no bucket.
 """
 
 from __future__ import annotations
