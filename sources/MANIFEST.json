@@ -1,0 +1,212 @@
+[
+ {
+  "file": "defillama_chart_BUSD_4.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=4",
+  "bytes": 267882,
+  "sha256": "fae3f393f3fead7d89d9de36c691a7f9eae02edf6476977bbe0ade82206fbd7c",
+  "fetched": "2026-10-20T18:03:25Z"
+ },
+ {
+  "file": "defillama_chart_EURC_50.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=50",
+  "bytes": 206523,
+  "sha256": "abec5b121e65caa3c4c371c73339c65c465fbbf7541d5324e9cd7c17cea267fe",
+  "fetched": "2026-10-20T18:03:27Z"
+ },
+ {
+  "file": "defillama_chart_EURCV_254.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=254",
+  "bytes": 141360,
+  "sha256": "833a4a2403803fe28c1d959184c29ba0449df0516593f69f2951cbd84242f3bc",
+  "fetched": "2026-10-20T18:03:28Z"
+ },
+ {
+  "file": "defillama_chart_EURQ_274.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=274",
+  "bytes": 57418,
+  "sha256": "1124ce25ee3904b6a306565a241915d010a85a9e7a38213af84525fbf38aab10",
+  "fetched": "2026-10-20T18:03:34Z"
+ },
+ {
+  "file": "defillama_chart_TUSD_7.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=7",
+  "bytes": 317723,
+  "sha256": "1046d4ff5dab98a07b17ccc278cb79270f5dcb8845abb188e8396c4f0550036b",
+  "fetched": "2026-10-20T18:03:40Z"
+ },
+ {
+  "file": "defillama_chart_USDC_2.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=2",
+  "bytes": 395846,
+  "sha256": "fc54355a4677c8099fb96b61471b79f80387122c92e32d478987b1db14f92d1e",
+  "fetched": "2026-10-20T18:03:42Z"
+ },
+ {
+  "file": "defillama_chart_USDCV_307.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=307",
+  "bytes": 56795,
+  "sha256": "a9a1f600db053537039a3a249757002bb198515def00b2506804413d7efb9536",
+  "fetched": "2026-10-20T18:03:43Z"
+ },
+ {
+  "file": "defillama_chart_USDQ_275.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=275",
+  "bytes": 57034,
+  "sha256": "942eb33c43b70375a4aa77388e5e4ff516e25f54964e00229d6a5a95bfe6741a",
+  "fetched": "2026-10-20T18:03:50Z"
+ },
+ {
+  "file": "defillama_chart_USDT_1.json",
+  "url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=1",
+  "bytes": 471170,
+  "sha256": "dec1810e6f83475904d92540a291e2fcf4cb6da4fccacc87ecbe3f041a041e2b",
+  "fetched": "2026-10-20T18:03:56Z"
+ },
+ {
+  "file": "circle_usdc_2026_January.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20January%2026.pdf",
+  "bytes": 303647,
+  "sha256": "97c9ccd26ea2c05ae9c5d627e69bbdb91a20863c19bd719a7bd9ab05e25c0861",
+  "fetched": "2026-10-20T18:03:58Z"
+ },
+ {
+  "file": "circle_eurc_2026_January.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20January%2026.pdf",
+  "bytes": 272926,
+  "sha256": "38c32b450ed5168e9823996dbecac2fae39182ab227dfe37cb20a06e75229030",
+  "fetched": "2026-10-20T18:03:59Z"
+ },
+ {
+  "file": "circle_usdc_2026_February.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20February%2026.pdf",
+  "bytes": 369845,
+  "sha256": "f7680da41700ad5c1fd3f13ec3915b8477d104156c94f8481849cb28c8a12b84",
+  "fetched": "2026-10-20T18:04:00Z"
+ },
+ {
+  "file": "circle_eurc_2026_February.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20February%2026.pdf",
+  "bytes": 313908,
+  "sha256": "380a39f4e7dd99ca4041fd916399e4c69f06416964168151b1f3519fe305280f",
+  "fetched": "2026-10-20T18:04:01Z"
+ },
+ {
+  "file": "circle_usdc_2026_March.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20March%2026.pdf",
+  "bytes": 302981,
+  "sha256": "fa31123de5cbdf280efb18dce82b51150e2e9fa8441ff75712aec40dd7bc5b34",
+  "fetched": "2026-10-20T18:04:01Z"
+ },
+ {
+  "file": "circle_eurc_2026_March.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20March%2026.pdf",
+  "bytes": 272060,
+  "sha256": "01cc9d22d89472ca80fba7ee4d4c0f14bc9ae8395461815777f813fd85eeff03",
+  "fetched": "2026-10-20T18:04:02Z"
+ },
+ {
+  "file": "circle_usdc_2026_April.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20April%2026.pdf",
+  "bytes": 396204,
+  "sha256": "5e590b07a28acc7d6f6d995e8096077b33d19408a60480b7a9f1a10f60c69326",
+  "fetched": "2026-10-20T18:04:03Z"
+ },
+ {
+  "file": "circle_eurc_2026_April.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20April%2026.pdf",
+  "bytes": 338017,
+  "sha256": "035c51fb610a1eaef93b9a4b2a5e7b108b70226afe8f15d476c6401a5bbf294d",
+  "fetched": "2026-10-20T18:04:03Z"
+ },
+ {
+  "file": "circle_usdc_2026_May.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20May%2026.pdf",
+  "bytes": 301879,
+  "sha256": "c1a40d889587d91c8f41cdc66f94ad0dda09456cc395b8331f2c79f0b66c95fb",
+  "fetched": "2026-10-20T18:04:03Z"
+ },
+ {
+  "file": "circle_eurc_2026_May.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20May%2026.pdf",
+  "bytes": 271938,
+  "sha256": "b7f3233d5fd6f9ea45278ba2d063c9d6cff0f2665c03c2a8edc6e82eb8767090",
+  "fetched": "2026-10-20T18:04:04Z"
+ },
+ {
+  "file": "circle_usdc_2026_June.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20June%2026.pdf",
+  "bytes": 395967,
+  "sha256": "933edcb3846e26e6a87b1476cedc12a14d9e1d3e42dcd30aa73f41d9a4cf5b74",
+  "fetched": "2026-10-20T18:04:05Z"
+ },
+ {
+  "file": "circle_eurc_2026_June.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20June%2026.pdf",
+  "bytes": 341349,
+  "sha256": "9d876236f43880c3c7b0c5581b548bbc40172f4e5e91e88c145ca73247b78c7d",
+  "fetched": "2026-10-20T18:04:05Z"
+ },
+ {
+  "file": "circle_usdc_2026_July.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20July%2026.pdf",
+  "bytes": 396313,
+  "sha256": "1644d6ff5e74eaf71608a1af55739f989321711ee7547d039c9d8d0f9fc9abb6",
+  "fetched": "2026-10-20T18:04:06Z"
+ },
+ {
+  "file": "circle_eurc_2026_July.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20July%2026.pdf",
+  "bytes": 338709,
+  "sha256": "b36bd05d5c2b8a81bf50b36e9dc2bfb050fbcaed270ec3db81285166c53f021a",
+  "fetched": "2026-10-20T18:04:07Z"
+ },
+ {
+  "file": "circle_usdc_2026_August.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20August%2026.pdf",
+  "bytes": 408882,
+  "sha256": "ae9d0a3bece12334d24392d8fcdd3fdda3a8662fc05addbe95db928f0a1f2485",
+  "fetched": "2026-10-20T18:04:07Z"
+ },
+ {
+  "file": "circle_eurc_2026_August.pdf",
+  "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/EURC%20Attestations/2026%20EURC_Examination%20Report%20August%2026.pdf",
+  "bytes": 343212,
+  "sha256": "421699c9ed9d29dea3799375dff984a91b7b8aa7c5c9b49b9e49b455b1441c84",
+  "fetched": "2026-10-20T18:04:07Z"
+ },
+ {
+  "file": "sgforge_coinvertible.html",
+  "url": "https://www.sgforge.com/product/coinvertible/",
+  "bytes": 66437,
+  "sha256": "de852ab14c6ee56e8c65c25ba69ddcc16f375d74f9b03562efa677ae4e77c11f",
+  "fetched": "2026-10-20T18:04:09Z"
+ },
+ {
+  "file": "quantoz_transparency.html",
+  "url": "https://quantoz.com/transparency",
+  "bytes": 37099,
+  "sha256": "e36ad0a8caca5825a00759a8a323671313e324d497b782cec611e63d005d9aa4",
+  "fetched": "2026-10-20T18:04:09Z"
+ },
+ {
+  "file": "blackrock_crf_factsheet.pdf",
+  "url": "https://www.blackrock.com/cash/literature/fact-sheet/circle-reserve-fund-institutional-fact-sheet.pdf",
+  "bytes": 144276,
+  "sha256": "76ae635e618f95c972a4f9d649569d2996bb90540784d9b34a5dd56d50fb4f06",
+  "fetched": "2026-10-20T18:04:10Z"
+ },
+ {
+  "file": "eba_rts_2024_10_liquidity.pdf",
+  "url": "https://www.eba.europa.eu/sites/default/files/2024-06/580db2f3-8370-4927-baa3-0f995722b417/Final%20report_draft%20RTS%20further%20specifying%20the%20liquidity%20requirements%20Article%2036%204.pdf",
+  "bytes": 836101,
+  "sha256": "1c74303a6b707584f59919d1cce19b13a02d550f5f11f4514538eb5a4a890e0b",
+  "fetched": "2026-10-20T18:04:10Z"
+ },
+ {
+  "file": "eba_rts_2024_11_hlfi.pdf",
+  "url": "https://eba.europa.eu/sites/default/files/2024-06/d92b94f8-8260-43b6-abae-d21e022414ed/Final%20report_draft%20RTS%20to%20specify%20the%20HLFI%20in%20the%20reserve%20of%20assets%20Article%2038%205.pdf",
+  "bytes": 1045489,
+  "sha256": "4d3fc991ce52ddecc6e530839648562e55a10b1306f62cc2ef2df0eea675fa2c",
+  "fetched": "2026-10-20T18:04:10Z"
+ }
+]

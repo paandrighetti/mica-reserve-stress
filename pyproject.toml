@@ -1,0 +1,18 @@
+[project]
+name = "mrs"
+version = "0.1.0"
+description = "Reserves of e-money tokens against MiCA's reserve and liquidity rules, from public disclosures"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2", "numpy>=2.0", "pdfplumber>=0.11", "holidays>=0.60"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "scripts"]
+
+[tool.ruff]
+line-length = 120

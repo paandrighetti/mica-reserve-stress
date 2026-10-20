@@ -1,0 +1,525 @@
+{
+ "gross_over_net": 1.3181818181818181,
+ "min_units": 1000000.0,
+ "min_share_of_latest": 0.1,
+ "skip_first_days": 90,
+ "min_share_days_changed": 0.5,
+ "data_changes": [
+  {
+   "token": "USDC",
+   "date": "2019-01-14",
+   "move": 7278886.0,
+   "supply_before": 361028960.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-01-19",
+   "move": 8693485.0,
+   "supply_before": 313461185.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-01-24",
+   "move": -17016534.0,
+   "supply_before": 329708866.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-01-25",
+   "move": 7407341.0,
+   "supply_before": 312692332.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-03-09",
+   "move": 6044148.0,
+   "supply_before": 231228366.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-07-18",
+   "move": 20744286.0,
+   "supply_before": 402729440.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-07-20",
+   "move": -17842283.0,
+   "supply_before": 422363494.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-09-05",
+   "move": -13721087.0,
+   "supply_before": 442171906.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-09-06",
+   "move": 23340191.0,
+   "supply_before": 428450819.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-10-11",
+   "move": -9423774.0,
+   "supply_before": 461220659.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-10-12",
+   "move": 15284818.0,
+   "supply_before": 451796885.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-10-23",
+   "move": -15399596.0,
+   "supply_before": 476325471.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-10-25",
+   "move": 14451758.0,
+   "supply_before": 462962812.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-03",
+   "move": 14092187.0,
+   "supply_before": 454513565.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-05",
+   "move": -20588394.0,
+   "supply_before": 467034517.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-06",
+   "move": 21559185.0,
+   "supply_before": 446446123.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-07",
+   "move": -9702935.0,
+   "supply_before": 468005308.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-21",
+   "move": -9046879.0,
+   "supply_before": 439684403.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-11-22",
+   "move": 11175101.0,
+   "supply_before": 430637524.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-12-04",
+   "move": -12005431.0,
+   "supply_before": 457076080.0
+  },
+  {
+   "token": "USDC",
+   "date": "2019-12-19",
+   "move": 12046201.0,
+   "supply_before": 460191065.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-01-15",
+   "move": -15150826.0,
+   "supply_before": 447171710.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-01-16",
+   "move": 20113226.0,
+   "supply_before": 432020884.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-01-23",
+   "move": 10772088.0,
+   "supply_before": 447471889.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-04-07",
+   "move": -14131667.0,
+   "supply_before": 700351786.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-04-09",
+   "move": 15896184.0,
+   "supply_before": 697129228.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-05-14",
+   "move": 21360226.0,
+   "supply_before": 748338008.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-06-01",
+   "move": -14974170.0,
+   "supply_before": 747124387.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-08-11",
+   "move": -23044255.0,
+   "supply_before": 1146087516.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-08-13",
+   "move": 27155663.0,
+   "supply_before": 1133850754.0
+  },
+  {
+   "token": "USDC",
+   "date": "2020-09-29",
+   "move": -55604302.0,
+   "supply_before": 2600077490.0
+  },
+  {
+   "token": "USDC",
+   "date": "2021-01-26",
+   "move": -116365848.0,
+   "supply_before": 5590009066.0
+  },
+  {
+   "token": "USDC",
+   "date": "2021-01-28",
+   "move": 128070075.0,
+   "supply_before": 5450842922.0
+  },
+  {
+   "token": "USDC",
+   "date": "2021-02-17",
+   "move": -186898604.0,
+   "supply_before": 7443119084.0
+  },
+  {
+   "token": "USDC",
+   "date": "2024-04-18",
+   "move": -2068021182.0,
+   "supply_before": 31899526710.0
+  },
+  {
+   "token": "USDC",
+   "date": "2024-04-19",
+   "move": 2562899011.0,
+   "supply_before": 29831505528.0
+  },
+  {
+   "token": "USDC",
+   "date": "2024-04-20",
+   "move": -1441612161.0,
+   "supply_before": 32394404539.0
+  },
+  {
+   "token": "USDC",
+   "date": "2024-04-22",
+   "move": 2258477976.0,
+   "supply_before": 31005255269.0
+  },
+  {
+   "token": "EURC",
+   "date": "2023-05-04",
+   "move": 5601869.0,
+   "supply_before": 36306878.0
+  },
+  {
+   "token": "EURC",
+   "date": "2023-05-05",
+   "move": -6900878.0,
+   "supply_before": 41908747.0
+  },
+  {
+   "token": "EURC",
+   "date": "2023-12-29",
+   "move": 888937.0,
+   "supply_before": 44445152.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-06-19",
+   "move": -1979959.0,
+   "supply_before": 28114421.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-06-20",
+   "move": 1980011.0,
+   "supply_before": 26134462.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-07-03",
+   "move": 2187429.0,
+   "supply_before": 29371652.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-07-05",
+   "move": -1666696.0,
+   "supply_before": 31963978.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-07-18",
+   "move": 855084.0,
+   "supply_before": 29456943.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-08-15",
+   "move": 1809281.0,
+   "supply_before": 75774718.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-08-16",
+   "move": -29518417.0,
+   "supply_before": 77583999.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-01",
+   "move": -5278502.0,
+   "supply_before": 83654597.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-02",
+   "move": 5079455.0,
+   "supply_before": 78376095.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-05",
+   "move": -2418330.0,
+   "supply_before": 82709232.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-13",
+   "move": -6593028.0,
+   "supply_before": 94351664.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-20",
+   "move": 2095101.0,
+   "supply_before": 85811836.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-11-23",
+   "move": 2186303.0,
+   "supply_before": 81268810.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-12-04",
+   "move": 5361063.0,
+   "supply_before": 84840987.0
+  },
+  {
+   "token": "EURC",
+   "date": "2024-12-06",
+   "move": -3629945.0,
+   "supply_before": 90871859.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-03-05",
+   "move": -3790091.0,
+   "supply_before": 113687777.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-04-02",
+   "move": -3278604.0,
+   "supply_before": 145174195.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-05-05",
+   "move": 6182528.0,
+   "supply_before": 200140787.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-05-10",
+   "move": -4970536.0,
+   "supply_before": 209034706.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-05-29",
+   "move": -9932632.0,
+   "supply_before": 196917354.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-05-30",
+   "move": -10594168.0,
+   "supply_before": 186984722.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-05-31",
+   "move": 11804335.0,
+   "supply_before": 176390554.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-06-01",
+   "move": -3769561.0,
+   "supply_before": 188194889.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-06-19",
+   "move": 4873639.0,
+   "supply_before": 169779372.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-06-21",
+   "move": -4729407.0,
+   "supply_before": 176312384.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-07-30",
+   "move": -6910164.0,
+   "supply_before": 188376767.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-09-03",
+   "move": 4498948.0,
+   "supply_before": 201988548.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-09-23",
+   "move": -11224139.0,
+   "supply_before": 220145555.0
+  },
+  {
+   "token": "EURC",
+   "date": "2025-09-24",
+   "move": 5711955.0,
+   "supply_before": 208921416.0
+  },
+  {
+   "token": "EURC",
+   "date": "2026-06-14",
+   "move": 9013245.0,
+   "supply_before": 375804852.0
+  },
+  {
+   "token": "EURC",
+   "date": "2026-07-31",
+   "move": -8580975.0,
+   "supply_before": 391918425.0
+  },
+  {
+   "token": "EURC",
+   "date": "2026-08-01",
+   "move": 11725531.0,
+   "supply_before": 383337450.0
+  },
+  {
+   "token": "EURC",
+   "date": "2026-08-19",
+   "move": -9893244.0,
+   "supply_before": 408286939.0
+  },
+  {
+   "token": "EURC",
+   "date": "2026-08-21",
+   "move": 8494165.0,
+   "supply_before": 393030866.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-03-17",
+   "move": -4088012.0,
+   "supply_before": 64772228.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-03-18",
+   "move": 1241460.0,
+   "supply_before": 60684216.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-03-19",
+   "move": 2510911.0,
+   "supply_before": 61925676.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-03-24",
+   "move": -3732982.0,
+   "supply_before": 67821290.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-03-25",
+   "move": 1300248.0,
+   "supply_before": 64088308.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-04-17",
+   "move": -1998368.0,
+   "supply_before": 79528197.0
+  },
+  {
+   "token": "EURCV",
+   "date": "2026-04-25",
+   "move": 1486085.0,
+   "supply_before": 71765665.0
+  },
+  {
+   "token": "USDCV",
+   "date": "2026-05-20",
+   "move": -600000.0,
+   "supply_before": 12900640.0
+  },
+  {
+   "token": "USDCV",
+   "date": "2026-05-21",
+   "move": 600000.0,
+   "supply_before": 12300640.0
+  },
+  {
+   "token": "USDCV",
+   "date": "2026-05-22",
+   "move": -600000.0,
+   "supply_before": 12900640.0
+  },
+  {
+   "token": "USDCV",
+   "date": "2026-10-14",
+   "move": 1629765.0,
+   "supply_before": 11546181.0
+  }
+ ]
+}
