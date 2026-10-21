@@ -82,7 +82,7 @@ def parse_text(text: str, name: str) -> tuple[list[Holding], list[dict]]:
     m = re.search(rf"Report Dates ({DATE_WORDS}) ({DATE_WORDS})", text)
     if not m:
         raise ParseError(f"{name}: report dates not found")
-    dates = [datetime.strptime(d, "%B %d, %Y").date() for d in m.groups()]  # noqa: DTZ007 (dates)
+    dates = [datetime.strptime(d, "%B %d, %Y").date() for d in m.groups()]
     circ = re.search(rf"{token} in Circulation ([\d,]+) ([\d,]+)", text)
     fair = re.search(rf"Fair Value of Assets Held in {token} Reserve [$€] ([\d,]+) [$€] ([\d,]+)", text)
     if not circ or not fair:
@@ -123,7 +123,7 @@ def _usdc_date(lines: list[str], token: str, d: date, stamp: str) -> list[Holdin
         for i, ln in enumerate(sec):
             if mt := TBILL.match(ln):
                 bills.append(Holding(token, d, pool, "tbill", amount(mt.group(3)), mt.group(1),
-                                     datetime.strptime(mt.group(2), "%m/%d/%y").date()))  # noqa: DTZ007
+                                     datetime.strptime(mt.group(2), "%m/%d/%y").date()))
                 continue
             for key, label in LABELS.items():
                 if label.match(ln):

@@ -32,7 +32,7 @@ def sgforge(raw: str) -> list[dict]:
         shares = {b.strip(): float(p) / 100 for b, p in banks}
         if abs(sum(shares.values()) - 1) > 0.005:
             raise ValueError(f"{token}: bank shares sum to {sum(shares.values())}")
-        out.append({"token": token, "report_date": datetime.strptime(m.group(2), "%d/%m/%Y").date(),  # noqa: DTZ007 (a date)
+        out.append({"token": token, "report_date": datetime.strptime(m.group(2), "%d/%m/%Y").date(),
                     "circulation": _number(m.group(1)), "bank_shares": shares,
                     "composition": {"bank_cash": 1.0}, "source": "sgforge_coinvertible.html"})
     return out
@@ -44,7 +44,7 @@ def quantoz(raw: str) -> list[dict]:
     m = re.search(r"Published snapshot (\d{1,2} [A-Z][a-z]+ \d{4})", text)
     if not m:
         raise ValueError("snapshot date not found on the Quantoz page")
-    when: date = datetime.strptime(m.group(1), "%d %B %Y").date()  # noqa: DTZ007 (a date)
+    when: date = datetime.strptime(m.group(1), "%d %B %Y").date()
     out = []
     for token in ("EURQ", "USDQ"):
         t = re.search(rf"{token} .*? Tokens in circulation [€$]([\d,]+) Reserve ratio ([\d.]+)% Reported reserve "
